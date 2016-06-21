@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    labels:
+        app: node
+    name: node
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: node
+    template:
+        metadata:
+            labels:
+                app: node
+        spec:
+            containers:
+            -   command:
+                - /app/run-node.sh
+                image: tanmaig/express-example:k8s
+                name: node
+                ports:
+                -   containerPort: 3000
