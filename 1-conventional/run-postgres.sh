@@ -1,2 +1,2 @@
 #!/bin/bash
-postgres -D /usr/local/var/postgres
+/usr/bin/postgres -D /var/lib/postgresql/data/

@@ -17,7 +17,7 @@ spec:
 #            nodeSelector:
 #                app: postgres
             containers:
-            -   image: hasura/postgres:9.5.1-r0
+            -   image: hasura/postgres:9.5.3-r0
                 name: postgres
                 ports:
                 -   containerPort: 5432

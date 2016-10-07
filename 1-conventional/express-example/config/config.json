@@ -1,9 +1,9 @@
 {
   "development": {
     "dialect": "postgresql",
-    "username": "tanmaigopal",
+    "username": "ecthiender",
     "password": null,
-    "database": "sgdocker1",
+    "database": "bhivedocker1",
     "host": "127.0.0.1"
   },
   "test": {

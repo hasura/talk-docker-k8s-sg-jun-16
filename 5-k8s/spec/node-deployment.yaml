@@ -15,9 +15,9 @@ spec:
                 app: node
         spec:
             containers:
-            -   command:
-                - /app/run-node.sh
-                image: tanmaig/express-example:k8s2
+              - image: rayanon/express-example:k8s
+                command:
+                  - /app/run-node.sh
                 name: node
                 ports:
-                -   containerPort: 3000
+                  - containerPort: 3000
